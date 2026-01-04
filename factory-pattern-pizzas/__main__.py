@@ -1,6 +1,6 @@
 from pizzas import loader
 
-for pizza_type in 'margherita_pizza', 'pepperoni_pizza': 
+for pizza_type in 'margherita_pizza', 'pepperoni_pizza', 'veggie_pizza': 
     pizza = loader.create_pizza(pizza_type)
     pizza.name = pizza_type
     print(f"{pizza.name}")
