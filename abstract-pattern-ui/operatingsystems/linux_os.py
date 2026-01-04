@@ -2,6 +2,8 @@ from .abs_os import AbsOS
 from .linux.button import LinuxButton
 from .linux.checkbox import LinuxCheckbox
 from .linux.textinput import LinuxTextInput
+from .linux.linux_ui import LinuxUI 
+from .windows.button import WindowsButton
 
 class LinuxOS(AbsOS): 
 
@@ -9,6 +11,10 @@ class LinuxOS(AbsOS):
         self.button = LinuxButton()
         self.checkbox = LinuxCheckbox()
         self.text_input = LinuxTextInput()
+
+        for item in self.button, self.checkbox, self.text_input: 
+            if not isinstance(item, LinuxUI): 
+                raise TypeError("Only LinuxUI elements are allowed")
 
     def create_button(self): 
         return self.button

@@ -2,6 +2,7 @@ from .abs_os import AbsOS
 from .windows.button import WindowsButton
 from .windows.checkbox import WindowsCheckbox
 from .windows.textinput import WindowsTextInput
+from .windows.win_ui import WinUI
 
 class WindowsOS(AbsOS): 
 
@@ -9,6 +10,11 @@ class WindowsOS(AbsOS):
         self.button = WindowsButton()
         self.checkbox = WindowsCheckbox()
         self.text_input = WindowsTextInput()
+
+        for item in self.button, self.checkbox, self.text_input: 
+            if not isinstance(item, WinUI): 
+                raise TypeError("Only WinUI elements are allowed")
+
 
     def create_button(self): 
         return self.button

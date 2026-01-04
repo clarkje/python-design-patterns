@@ -2,6 +2,7 @@ from .abs_os import AbsOS
 from .mac.button import MacButton
 from .mac.checkbox import MacCheckbox
 from .mac.textinput import MacTextInput
+from .mac.mac_ui import MacUI
 
 class MacOS(AbsOS): 
 
@@ -9,6 +10,10 @@ class MacOS(AbsOS):
         self.button = MacButton()
         self.checkbox = MacCheckbox()
         self.text_input = MacTextInput()
+
+        for item in self.button, self.checkbox, self.text_input: 
+            if not isinstance(item, MacUI): 
+                raise TypeError("Only MacUI elements are allowed")
 
     def create_button(self): 
         return self.button
