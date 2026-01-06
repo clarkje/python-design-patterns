@@ -1,9 +1,5 @@
 from .abs_os import AbsOS
-from .mac.button import MacButton
-from .mac.checkbox import MacCheckbox
-from .mac.textinput import MacTextInput
-from .mac.mac_ui import MacUI
-
+from .mac import *
 class MacOS(AbsOS): 
 
     def __init__(self): 
@@ -23,3 +19,4 @@ class MacOS(AbsOS):
     
     def create_text_input(self): 
         return self.text_input
+    

@@ -1,9 +1,5 @@
 from .abs_os import AbsOS
-from .windows.button import WindowsButton
-from .windows.checkbox import WindowsCheckbox
-from .windows.textinput import WindowsTextInput
-from .windows.win_ui import WinUI
-
+from .windows import *
 class WindowsOS(AbsOS): 
 
     def __init__(self): 

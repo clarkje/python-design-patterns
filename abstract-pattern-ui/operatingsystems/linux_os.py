@@ -1,10 +1,5 @@
 from .abs_os import AbsOS
-from .linux.button import LinuxButton
-from .linux.checkbox import LinuxCheckbox
-from .linux.textinput import LinuxTextInput
-from .linux.linux_ui import LinuxUI 
-from .windows.button import WindowsButton
-
+from .linux import *
 class LinuxOS(AbsOS): 
 
     def __init__(self): 
