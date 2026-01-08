@@ -1,7 +1,12 @@
-from .mac_ui import MacUI
+from ..abs_checkbox import AbsCheckbox
 
-class MacCheckbox(MacUI): 
+class MacCheckbox(AbsCheckbox): 
+    
+    def __init__(self): 
+        pass
 
-    @staticmethod
-    def render(): 
+    def render(self): 
         print("[Mac Checkbox] rendered")
+
+    def toggle(self): 
+        pass

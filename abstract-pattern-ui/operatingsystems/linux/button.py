@@ -1,7 +1,12 @@
-from .linux_ui import LinuxUI
+from ..abs_button import AbsButton
 
-class LinuxButton(LinuxUI): 
+class LinuxButton(AbsButton): 
 
-    @staticmethod
-    def render(): 
+    def __init__(self): 
+        pass
+
+    def render(self): 
         print("[Linux Button] rendered")
+
+    def click(self): 
+        pass

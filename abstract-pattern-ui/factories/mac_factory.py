@@ -1,19 +1,16 @@
 from .abs_factory import AbsFactory
-from operatingsystems.mac_os import MacOS
+from operatingsystems.mac import *
 
 class MacFactory(AbsFactory): 
 
-    def __init__(self): 
-        print("==== Mac OS ====")
-    
     @staticmethod
     def create_button(): 
-        return MacOS.create_button()
+        return MacButton()
 
     @staticmethod
     def create_checkbox():
-        return MacOS.create_checkbox()
+        return MacCheckbox()
 
     @staticmethod
-    def create_textInput():
-        return MacOS.create_text_input()
+    def create_text_input():
+        return MacTextInput()

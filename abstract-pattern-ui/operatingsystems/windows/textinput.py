@@ -1,6 +1,8 @@
-from .win_ui import WinUI
-class WindowsTextInput(WinUI): 
+from ..abs_textinput import AbsTextInput
+class WindowsTextInput(AbsTextInput): 
 
-    @staticmethod
-    def render(): 
+    def __init__(self): 
+        pass
+
+    def render(self): 
         print("[Windows TextInput] rendered")

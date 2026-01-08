@@ -2,9 +2,6 @@ from .abs_factory import AbsFactory
 
 class NullFactory(AbsFactory): 
 
-    def __init__(self): 
-        print("===== NULL OS =====")
-     
     @staticmethod
     def create_button(): 
         raise NotImplementedError
@@ -14,5 +11,5 @@ class NullFactory(AbsFactory):
         raise NotImplementedError
 
     @staticmethod
-    def create_textInput():
+    def create_text_input():
         raise NotImplementedError

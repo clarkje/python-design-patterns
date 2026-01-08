@@ -1,7 +1,9 @@
-from .mac_ui import MacUI
+from ..abs_textinput import AbsTextInput
 
-class MacTextInput(MacUI):
+class MacTextInput(AbsTextInput):
 
-    @staticmethod
-    def render(): 
+    def __init__(self): 
+        pass
+
+    def render(self): 
         print("[Mac TextInput] rendered")

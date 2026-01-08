@@ -1,7 +1,12 @@
-from .linux_ui import LinuxUI
+from ..abs_checkbox import AbsCheckbox
 
-class LinuxCheckbox(LinuxUI): 
+class LinuxCheckbox(AbsCheckbox): 
 
-    @staticmethod
-    def render(): 
+    def __init__(self): 
+        pass
+
+    def render(self): 
         print("[Linux Checkbox] rendered")
+
+    def toggle(self): 
+        pass

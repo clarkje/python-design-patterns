@@ -1,6 +1,11 @@
-from .win_ui import WinUI
-class WindowsCheckbox(WinUI): 
+from ..abs_checkbox import AbsCheckbox
+class WindowsCheckbox(AbsCheckbox): 
 
-    @staticmethod
-    def render(): 
+    def __init__(self): 
+        pass
+
+    def render(self): 
         print("[Windows Checkbox] rendered")
+
+    def toggle(self): 
+        pass

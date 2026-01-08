@@ -1,7 +1,12 @@
-from .mac_ui import MacUI
+from ..abs_button import AbsButton
 
-class MacButton(MacUI): 
+class MacButton(AbsButton): 
 
-    @staticmethod
-    def render(): 
+    def __init__(self): 
+        pass
+
+    def render(self): 
         print("[Mac Button] rendered")
+
+    def click(self): 
+        pass

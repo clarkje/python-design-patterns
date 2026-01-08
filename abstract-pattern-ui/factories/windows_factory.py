@@ -1,19 +1,16 @@
 from .abs_factory import AbsFactory
-from operatingsystems.windows_os import WindowsOS
+from operatingsystems.windows import *
 
 class WindowsFactory(AbsFactory): 
 
-    def __init__(self): 
-        print("==== Windows OS ====")
-
     @staticmethod
     def create_button(): 
-        return WindowsOS.create_button()
+        return WindowsButton()
 
     @staticmethod
     def create_checkbox():
-        return WindowsOS.create_checkbox()
+        return WindowsCheckbox()
 
     @staticmethod
-    def create_textInput():
-        return WindowsOS.create_text_input()
+    def create_text_input():
+        return WindowsTextInput()

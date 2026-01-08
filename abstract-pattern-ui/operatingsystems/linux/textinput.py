@@ -1,8 +1,10 @@
-from .linux_ui import LinuxUI
+from ..abs_textinput import AbsTextInput
 
-class LinuxTextInput(LinuxUI):
+class LinuxTextInput(AbsTextInput):
 
-    @staticmethod
-    def render(): 
+    def __init__(self): 
+        pass
+
+    def render(self): 
         print("[Linux TextInput] rendered")
 
