@@ -2,5 +2,7 @@ from .linux_ui import LinuxUI
 
 class LinuxTextInput(LinuxUI):
 
-    def __init__(self): 
+    @staticmethod
+    def render(): 
         print("[Linux TextInput] rendered")
+

@@ -5,13 +5,15 @@ class MacFactory(AbsFactory):
 
     def __init__(self): 
         print("==== Mac OS ====")
-        self.os = MacOS()
- 
-    def create_button(self): 
-        return self.os.create_button()
+    
+    @staticmethod
+    def create_button(): 
+        return MacOS.create_button()
 
-    def create_checkbox(self):
-        return self.os.create_checkbox()
+    @staticmethod
+    def create_checkbox():
+        return MacOS.create_checkbox()
 
-    def create_textInput(self):
-        return self.os.create_text_input()
+    @staticmethod
+    def create_textInput():
+        return MacOS.create_text_input()

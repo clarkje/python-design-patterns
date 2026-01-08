@@ -2,5 +2,6 @@ from .mac_ui import MacUI
 
 class MacTextInput(MacUI):
 
-    def __init__(self): 
+    @staticmethod
+    def render(): 
         print("[Mac TextInput] rendered")

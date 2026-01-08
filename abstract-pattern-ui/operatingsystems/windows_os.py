@@ -3,20 +3,16 @@ from .windows import *
 class WindowsOS(AbsOS): 
 
     def __init__(self): 
-        self.button = WindowsButton()
-        self.checkbox = WindowsCheckbox()
-        self.text_input = WindowsTextInput()
+        pass
 
-        for item in self.button, self.checkbox, self.text_input: 
-            if not isinstance(item, WinUI): 
-                raise TypeError("Only WinUI elements are allowed")
-
-
-    def create_button(self): 
-        return self.button
+    @staticmethod
+    def create_button(): 
+        return WindowsButton()
     
-    def create_checkbox(self): 
-        return self.checkbox
+    @staticmethod
+    def create_checkbox(): 
+        return WindowsCheckbox()
     
-    def create_text_input(self): 
-        return self.text_input
+    @staticmethod
+    def create_text_input(): 
+        return WindowsTextInput()

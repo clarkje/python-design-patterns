@@ -2,5 +2,6 @@ from .linux_ui import LinuxUI
 
 class LinuxCheckbox(LinuxUI): 
 
-    def __init__(self): 
+    @staticmethod
+    def render(): 
         print("[Linux Checkbox] rendered")

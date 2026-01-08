@@ -4,15 +4,15 @@ class AbsOS(abc.ABC):
 
     @staticmethod
     @abc.abstractmethod
-    def create_button(self): 
+    def create_button(): 
         pass
 
     @staticmethod
     @abc.abstractmethod
-    def create_checkbox(self): 
+    def create_checkbox(): 
         pass
 
     @staticmethod
     @abc.abstractmethod
-    def create_text_input(self): 
+    def create_text_input(): 
         pass

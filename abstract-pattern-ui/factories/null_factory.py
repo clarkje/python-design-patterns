@@ -1,18 +1,18 @@
 from .abs_factory import AbsFactory
 
-class NullFactory(): 
+class NullFactory(AbsFactory): 
+
+    def __init__(self): 
+        print("===== NULL OS =====")
      
-    @abc.staticmethod
-    @abc.abstractmethod
-    def create_button(self): 
-        return None
+    @staticmethod
+    def create_button(): 
+        raise NotImplementedError
 
-    @abc.staticmethod
-    @abc.abstractmethod
-    def create_checkbox(self):
-        return None
+    @staticmethod
+    def create_checkbox():
+        raise NotImplementedError
 
-    @abc.staticmethod
-    @abc.abstractmethod
-    def create_textInput(self):
-        return None
+    @staticmethod
+    def create_textInput():
+        raise NotImplementedError

@@ -2,21 +2,15 @@ from .abs_os import AbsOS
 from .mac import *
 class MacOS(AbsOS): 
 
-    def __init__(self): 
-        self.button = MacButton()
-        self.checkbox = MacCheckbox()
-        self.text_input = MacTextInput()
-
-        for item in self.button, self.checkbox, self.text_input: 
-            if not isinstance(item, MacUI): 
-                raise TypeError("Only MacUI elements are allowed")
-
-    def create_button(self): 
-        return self.button
+    @staticmethod
+    def create_button(): 
+        return MacButton()
     
-    def create_checkbox(self): 
-        return self.checkbox
+    @staticmethod
+    def create_checkbox(): 
+        return MacCheckbox()
     
-    def create_text_input(self): 
-        return self.text_input
+    @staticmethod
+    def create_text_input(): 
+        return MacTextInput()
     

@@ -1,5 +1,6 @@
 from .win_ui import WinUI
 class WindowsCheckbox(WinUI): 
 
-    def __init__(self): 
+    @staticmethod
+    def render(): 
         print("[Windows Checkbox] rendered")
