@@ -67,8 +67,10 @@ computer = (builder
     .build())
 ```
 ##### Using director
+```
 director = ComputerDirector()
 gaming_pc = director.build_gaming_pc(ComputerBuilder())
+```
 
 ### Deliverables
 

@@ -23,6 +23,29 @@ class Computer():
         self.cooling: str = cooling_system
         self.wifi_card: bool = wifi_card
         self.bluetooth: bool = bluetooth
-
    
+    def __str__(self): 
+        output = f"CPU: {self.cpu}"
+        output += f"RAM: {self.ram} GB"
+        output += f"Storage: {self.storage} GB"    
+        output += f"GPU: {self.gpu}"
+        output += f"Motherboard: {self.motherboard}"   
+        output += f"PSU: {self.psu} W"
+        output += f"Case: {self.case}"
+        output += f"Cooling System: {self.cooling}"
+        output += f"WiFi Card: {'Yes' if self.wifi_card else 'No'}"
+        output += f"Bluetooth: {'Yes' if self.bluetooth else 'No'}"
+        return output
+        
+    def __repr__(self): 
+        print(f"CPU: {self.cpu}")
+        print(f"RAM: {self.ram} GB")
+        print(f"Storage: {self.storage} GB")    
+        print(f"GPU: {self.gpu}")
+        print(f"Motherboard: {self.motherboard}")   
+        print(f"PSU: {self.psu} W")
+        print(f"Case: {self.case}")
+        print(f"Cooling System: {self.cooling}")
+        print(f"WiFi Card: {'Yes' if self.wifi_card else 'No'}")
+        print(f"Bluetooth: {'Yes' if self.bluetooth else 'No'}")
     

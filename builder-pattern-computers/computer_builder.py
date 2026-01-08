@@ -90,13 +90,13 @@ class ComputerBuilder():
     def get_wifi_card(self): 
         return self._wifi_card
     
-    def set_wifi_card(self) -> Self:
-        self._wifi_card = True
+    def set_wifi_card(self, wifi_card = True) -> Self:
+        self._wifi_card = wifi_card
         return self
     
     def get_bluetooth(self): 
         return self._bluetooth
     
-    def set_bluetooth(self) -> Self: 
-        self._bluetooth = True
+    def set_bluetooth(self, bluetooth = True) -> Self: 
+        self._bluetooth = bluetooth
         return self
