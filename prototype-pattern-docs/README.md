@@ -22,9 +22,12 @@ A display() method to show the document details
 ### Concrete Prototypes: 
 
 Implement at least three document types:
-Contract: Has additional fields like party_a, party_b, terms
-Invoice: Has fields like invoice_number, items (list of dicts), total
-Report: Has fields like author, date, data_points (list)
+- Contract: 
+  - Has additional fields like party_a, party_b, terms
+- Invoice: 
+  - Has fields like invoice_number, items (list of dicts), total
+- Report: 
+  - Has fields like author, date, data_points (list)
 
 ### Prototype Registry: 
 
