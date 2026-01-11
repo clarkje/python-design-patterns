@@ -1,6 +1,6 @@
 import abc
 
-class AbsPizza(metaclass=abc.ABCMeta): 
+class AbsPizza(abc.ABC): 
 
     '''
     Pizza Name Property

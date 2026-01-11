@@ -1,5 +1,12 @@
 # Factory Pattern Practice Assignment
 
+## Usage: 
+
+```
+python ./factory-pattern-pizzas.py     
+usage: factory-pattern-pizzas.py [-h] [-pizza PIZZA] [-all]
+```
+
 ## Scenario: Pizza Restaurant Order System
 
 You're building an order system for a pizza restaurant that needs to create different types of pizzas based on customer orders.
