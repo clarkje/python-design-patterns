@@ -1,3 +1,4 @@
+from typing import Self
 from computer import Computer
 
 class ComputerBuilder(): 
@@ -14,9 +15,9 @@ class ComputerBuilder():
         self._wifi_card: bool = False
         self._bluetooth: bool = False
 
-    def build(self):
+    def build(self) -> Computer:
         if None in (self._cpu, self._ram, self._storage):
-            raise TypeError().add_note("CPU, RAM and Storage are required properties") 
+            raise TypeError("CPU, RAM and Storage are required properties") 
         
         return Computer(
             self._cpu,
@@ -30,6 +31,10 @@ class ComputerBuilder():
             self._wifi_card, 
             self._bluetooth
         )
+
+
+    def reset(self) -> None: 
+        self.__init__()
 
     def get_cpu(self): 
         return self._cpu
@@ -45,7 +50,7 @@ class ComputerBuilder():
         self._ram = ram_gb
         return self
         
-    def get_storage(self, storage_gb: int):
+    def get_storage(self):
         return self._storage
 
     def set_storage(self, storage_gb: int) -> Self: 
@@ -90,13 +95,13 @@ class ComputerBuilder():
     def get_wifi_card(self): 
         return self._wifi_card
     
-    def set_wifi_card(self, wifi_card = True) -> Self:
+    def set_wifi_card(self, wifi_card: bool = True) -> Self:
         self._wifi_card = wifi_card
         return self
     
     def get_bluetooth(self): 
         return self._bluetooth
     
-    def set_bluetooth(self, bluetooth = True) -> Self: 
+    def set_bluetooth(self, bluetooth: bool = True) -> Self: 
         self._bluetooth = bluetooth
         return self
