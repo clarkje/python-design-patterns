@@ -1,15 +1,11 @@
 from .abs_factory import AbsFactory
-
 class NullFactory(AbsFactory): 
 
-    @staticmethod
-    def create_button(): 
+    def create_button(self): 
         raise NotImplementedError
 
-    @staticmethod
-    def create_checkbox():
+    def create_checkbox(self):
         raise NotImplementedError
 
-    @staticmethod
-    def create_text_input():
+    def create_text_input(self):
         raise NotImplementedError

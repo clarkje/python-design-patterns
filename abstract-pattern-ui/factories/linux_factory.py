@@ -1,16 +1,13 @@
 from .abs_factory import AbsFactory
-from operatingsystems.linux import *
+from operatingsystems.linux import LinuxButton, LinuxCheckbox, LinuxTextInput
 
 class LinuxFactory(AbsFactory): 
 
-    @staticmethod
-    def create_button(): 
+    def create_button(self): 
         return LinuxButton()
 
-    @staticmethod
-    def create_checkbox():
+    def create_checkbox(self):
         return LinuxCheckbox()
 
-    @staticmethod
-    def create_text_input():
+    def create_text_input(self):
         return LinuxTextInput()

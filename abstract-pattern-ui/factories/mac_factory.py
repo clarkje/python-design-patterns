@@ -1,16 +1,13 @@
 from .abs_factory import AbsFactory
-from operatingsystems.mac import *
+from operatingsystems.mac import MacButton, MacCheckbox, MacTextInput
 
 class MacFactory(AbsFactory): 
 
-    @staticmethod
-    def create_button(): 
+    def create_button(self): 
         return MacButton()
 
-    @staticmethod
-    def create_checkbox():
+    def create_checkbox(self):
         return MacCheckbox()
 
-    @staticmethod
-    def create_text_input():
+    def create_text_input(self):
         return MacTextInput()

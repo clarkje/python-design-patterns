@@ -1,5 +1,5 @@
 from .abs_factory import AbsFactory
-from operatingsystems.windows import *
+from operatingsystems.windows import WindowsButton, WindowsCheckbox, WindowsTextInput
 
 class WindowsFactory(AbsFactory): 
 
