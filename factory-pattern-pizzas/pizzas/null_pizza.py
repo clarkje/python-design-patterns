@@ -3,6 +3,7 @@ from .abs_pizza import AbsPizza
 class NullPizza(AbsPizza): 
 
     def __init__(self, name: str = None):
+        super().__init__()
         self._pizza_type = name
         self._name = "NullPizza"
         self._prep_instructions = None
@@ -12,11 +13,7 @@ class NullPizza(AbsPizza):
 
     @property
     def name(self): 
-        return None
-    
-    @name.setter
-    def name(self, name): 
-        pass
+        return self._name
     
     def prepare(self): 
         raise ValueError(f"Pizza Type {self._pizza_type} not Found")

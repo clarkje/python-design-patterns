@@ -17,7 +17,7 @@ def print_pizza(pizza_type):
             print(operation())
         except ValueError: 
             if isinstance(pizza, NullPizza): 
-                print("Invoking this operation on NullPizza threw a ValueError as expected.")
+                print(f"Pizza type '{pizza._pizza_type}' is not specified and the invoked operation threw a ValueError as expected.")
 
 ## Main ##
 

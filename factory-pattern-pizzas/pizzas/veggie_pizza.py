@@ -3,6 +3,7 @@ from .abs_pizza import AbsPizza
 class VeggiePizza(AbsPizza): 
 
     def __init__(self):
+        super().__init__()
         self._name = "Veggie Pizza"
         self._prep_instructions = """ 
             Add 1 Scoop Marinara Sauce

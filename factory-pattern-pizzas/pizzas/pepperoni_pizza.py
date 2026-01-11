@@ -3,7 +3,8 @@ from .abs_pizza import AbsPizza
 class PepperoniPizza(AbsPizza): 
 
     def __init__(self):
-        self._name = None
+        super().__init__()
+        self._name = "Pepperoni Pizza"
         self._prep_instructions = """ 
             Add 1 Scoop Marinara Sauce
             Add 2 handfulls of mozarella

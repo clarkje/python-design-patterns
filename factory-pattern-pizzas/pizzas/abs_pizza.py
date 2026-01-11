@@ -11,11 +11,7 @@ class AbsPizza(abc.ABC):
     @property
     @abc.abstractmethod
     def name(self): 
-        pass
-
-    @name.setter
-    def name(self, value: str) -> None:
-        self._name = value
+        return self._name
 
     '''
     Prints preparation steps

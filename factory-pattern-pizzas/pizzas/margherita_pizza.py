@@ -3,7 +3,8 @@ from .abs_pizza import AbsPizza
 class MargheritaPizza(AbsPizza): 
 
     def __init__(self):
-        self._name = None
+        super().__init__()
+        self._name = "Margherita Pizza"
         self._prep_instructions = """ 
             Add 1 Scoop Marinara Sauce
             Add 2 handfulls of mozarella
@@ -24,10 +25,6 @@ class MargheritaPizza(AbsPizza):
     @property
     def name(self): 
         return self._name
-    
-    @name.setter
-    def name(self, name): 
-        self._name = name
     
     def prepare(self): 
         return(f"Preparation Instructions\n {self._prep_instructions}")
