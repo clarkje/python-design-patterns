@@ -2,18 +2,20 @@ import abc
 
 class AbsPizza(abc.ABC): 
 
+    def __init__(self): 
+        self._name = None
+
     '''
     Pizza Name Property
     '''
     @property
     @abc.abstractmethod
     def name(self): 
-        pass;
+        pass
 
     @name.setter
-    @abc.abstractmethod
-    def name(self, name): 
-        pass;
+    def name(self, value: str) -> None:
+        self._name = value
 
     '''
     Prints preparation steps
