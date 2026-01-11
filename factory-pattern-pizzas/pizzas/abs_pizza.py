@@ -9,10 +9,9 @@ class AbsPizza(abc.ABC):
     Pizza Name Property
     '''
     @property
-    @abc.abstractmethod
     def name(self) -> str: 
-        pass
-    
+        return self._name
+
     '''
     Prints preparation steps
     '''
