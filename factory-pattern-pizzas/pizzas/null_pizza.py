@@ -15,14 +15,14 @@ class NullPizza(AbsPizza):
     def name(self) -> str: 
         return self._name
     
-    def prepare(self) -> None: 
+    def prepare(self) -> str: 
         raise ValueError(f"Pizza Type {self._pizza_type} not Found")
 
-    def bake(self) -> None: 
+    def bake(self) -> str: 
         raise ValueError(f"Pizza Type {self._pizza_type} not found")
 
-    def cut(self) -> None: 
+    def cut(self) -> str: 
         raise ValueError(f"Pizza Type {self._pizza_type} not found")
 
-    def box(self) -> None: 
+    def box(self) -> str: 
         raise ValueError(f"Pizza Type {self._pizza_type} not found")

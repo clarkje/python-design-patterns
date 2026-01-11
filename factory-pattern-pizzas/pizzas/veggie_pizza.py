@@ -31,7 +31,7 @@ class VeggiePizza(AbsPizza):
         return self._name
     
     @name.setter
-    def name(self, name) -> str: 
+    def name(self, name) -> None: 
         self._name = name
     
     def prepare(self) -> str: 
