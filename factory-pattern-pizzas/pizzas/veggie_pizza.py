@@ -27,21 +27,21 @@ class VeggiePizza(AbsPizza):
         """
 
     @property
-    def name(self): 
+    def name(self) -> str: 
         return self._name
     
     @name.setter
-    def name(self, name): 
+    def name(self, name) -> str: 
         self._name = name
     
-    def prepare(self): 
+    def prepare(self) -> str: 
         return f"Preparation Instructions\n {self._prep_instructions}"
 
-    def bake(self): 
+    def bake(self) -> str: 
         return f"Baking Instructions\n {self._bake_instructions}"
 
-    def cut(self): 
+    def cut(self) -> str: 
         return f"Cutting Instructions: {self._cut_instructions}"
 
-    def box(self): 
+    def box(self) -> str: 
         return f"Boxing Instructions: {self._box_instructions}"

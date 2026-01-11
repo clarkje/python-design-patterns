@@ -14,5 +14,5 @@ class PizzaFactory:
         return pizza_class
     
     @property
-    def available_pizza_types(self): 
+    def available_pizza_types(self) -> dict: 
         return self._available_pizza_types

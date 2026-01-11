@@ -10,33 +10,33 @@ class AbsPizza(abc.ABC):
     '''
     @property
     @abc.abstractmethod
-    def name(self): 
+    def name(self) -> str: 
         return self._name
 
     '''
     Prints preparation steps
     '''
     @abc.abstractmethod
-    def prepare(self): 
+    def prepare(self) -> str: 
         pass 
 
     '''
     Prints baking information
     '''
     @abc.abstractmethod
-    def bake(self): 
+    def bake(self) -> str: 
         pass
 
     '''
     Prints cutting style
     '''
     @abc.abstractmethod
-    def cut(self): 
+    def cut(self) -> str: 
         pass
     
     '''
     Prints boxing information
     '''
     @abc.abstractmethod
-    def box(self): 
+    def box(self) -> str: 
         pass
