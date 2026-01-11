@@ -3,7 +3,8 @@ from computer_builder import ComputerBuilder
 
 class ComputerDirector(): 
 
-    def build_gaming_pc(self) -> Computer:
+    @staticmethod
+    def build_gaming_pc() -> Computer:
         computer = (ComputerBuilder()
                     .set_cpu("Intel 9000+")
                     .set_ram(32)
@@ -13,7 +14,8 @@ class ComputerDirector():
                     .build())
         return computer        
 
-    def build_office_pc(self) -> Computer: 
+    @staticmethod
+    def build_office_pc() -> Computer: 
         computer = (ComputerBuilder()
                     .set_cpu("Intel Celeron")
                     .set_ram(32)
@@ -23,7 +25,8 @@ class ComputerDirector():
                     .build())
         return computer        
     
-    def build_workstation(self) -> Computer:
+    @staticmethod
+    def build_workstation() -> Computer:
         computer = (ComputerBuilder()
                     .set_cpu("ESP32")
                     .set_ram(1293240187)

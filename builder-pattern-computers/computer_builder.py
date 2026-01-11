@@ -19,7 +19,7 @@ class ComputerBuilder():
         if None in (self._cpu, self._ram, self._storage):
             raise TypeError("CPU, RAM and Storage are required properties") 
         
-        return Computer(
+        return Computer._from_builder(
             self._cpu,
             self._ram, 
             self._storage, 
@@ -31,7 +31,6 @@ class ComputerBuilder():
             self._wifi_card, 
             self._bluetooth
         )
-
 
     def reset(self) -> None: 
         self.__init__()
