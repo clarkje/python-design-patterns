@@ -6,4 +6,4 @@ class LinuxCheckbox(AbsCheckbox):
         print("[Linux Checkbox] rendered")
 
     def toggle(self): 
-        pass
+        print("[Windows Checkbox] toggled")

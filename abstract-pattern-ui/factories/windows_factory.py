@@ -3,14 +3,11 @@ from operatingsystems.windows import WindowsButton, WindowsCheckbox, WindowsText
 
 class WindowsFactory(AbsFactory): 
 
-    @staticmethod
-    def create_button(): 
+    def create_button(self): 
         return WindowsButton()
 
-    @staticmethod
-    def create_checkbox():
+    def create_checkbox(self):
         return WindowsCheckbox()
 
-    @staticmethod
-    def create_text_input():
+    def create_text_input(self):
         return WindowsTextInput()

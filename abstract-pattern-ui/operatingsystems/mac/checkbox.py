@@ -6,4 +6,4 @@ class MacCheckbox(AbsCheckbox):
         print("[Mac Checkbox] rendered")
 
     def toggle(self): 
-        pass
+        print("[Windows Checkbox] toggled")

@@ -6,4 +6,4 @@ class MacButton(AbsButton):
         print("[Mac Button] rendered")
 
     def click(self): 
-        pass
+        print("[Mac Button] clicked")

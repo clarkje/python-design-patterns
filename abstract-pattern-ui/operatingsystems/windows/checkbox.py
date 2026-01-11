@@ -5,4 +5,4 @@ class WindowsCheckbox(AbsCheckbox):
         print("[Windows Checkbox] rendered")
 
     def toggle(self): 
-        pass
+        print("[Windows Checkbox] toggled")

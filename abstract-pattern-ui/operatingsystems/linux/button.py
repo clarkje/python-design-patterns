@@ -6,4 +6,4 @@ class LinuxButton(AbsButton):
         print("[Linux Button] rendered")
 
     def click(self): 
-        pass
+        print("[Linux Button] clicked")
