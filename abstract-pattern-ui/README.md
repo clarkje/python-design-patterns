@@ -1,5 +1,17 @@
 # Abstract Factory Pattern Practice Assignment
 
+## Usage
+```
+usage: abstract-pattern-ui [-h] [-os OS] [-all]
+
+educational implementation of abstract factory pattern
+
+options:
+  -h, --help            show this help message and exit
+  -os, --os OS          Specify the OS to use --os=<Mac|Windows|Linux> - Unsupported options should throw a NotImplementedError
+  -all, --all           Print output from all OS types, including null
+```
+
 ## Assignment:
 Cross-Platform UI Component Factory
 
