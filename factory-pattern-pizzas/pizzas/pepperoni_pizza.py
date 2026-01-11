@@ -7,7 +7,7 @@ class PepperoniPizza(AbsPizza):
         self._name = "Pepperoni Pizza"
         self._prep_instructions = """ 
             Add 1 Scoop Marinara Sauce
-            Add 2 handfulls of mozarella
+            Add 2 handfuls of mozarella
             Add 36 pepperoni slices
             """
         self._bake_instructions = """ 
@@ -25,11 +25,7 @@ class PepperoniPizza(AbsPizza):
     @property
     def name(self) -> str: 
         return self._name
-    
-    @name.setter
-    def name(self, name) -> None: 
-        self._name = name
-    
+        
     def prepare(self) -> str: 
         return f"Preparation Instructions\n {self._prep_instructions}"
 

@@ -8,8 +8,7 @@ parser.add_argument("-all",action="store_true",help="Exercise all available pizz
 args = parser.parse_args()
 
 def print_pizza(pizza_type):
-    factory = PizzaFactory()
-    pizza = factory.create_pizza(pizza_type)
+    pizza = PizzaFactory.create_pizza(pizza_type)
     print(f"{pizza.__class__.__name__}")
     
     for operation in [pizza.prepare, pizza.bake, pizza.cut, pizza.box]:      

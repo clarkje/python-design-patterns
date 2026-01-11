@@ -4,8 +4,7 @@ from pizzas.abs_pizza import AbsPizza
 class TestVeggiePizza: 
 
     def setup_method(self): 
-        factory = PizzaFactory()
-        self.vp = factory.create_pizza("veggie")
+        self.vp = PizzaFactory.create_pizza("veggie")
 
     def test_name_property(self): 
         assert self.vp.name == "Veggie Pizza"

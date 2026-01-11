@@ -4,6 +4,7 @@ class PizzaFactory:
 
     _available_pizza_types = {"margherita": MargheritaPizza, "pepperoni": PepperoniPizza, "veggie": VeggiePizza}
 
+    @classmethod
     def create_pizza(cls, pizza_type: str) -> AbsPizza: 
         if pizza_type not in cls._available_pizza_types:
             pizza_class = NullPizza(pizza_type)
