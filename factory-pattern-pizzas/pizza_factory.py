@@ -7,12 +7,12 @@ class PizzaFactory:
     @classmethod
     def create_pizza(cls, pizza_type: str) -> AbsPizza: 
         print(f"Pizza Type: {pizza_type}")
-        if pizza_type not in self._available_pizza_types:
+        if pizza_type not in cls._available_pizza_types:
             pizza_class = NullPizza(pizza_type)
         else: 
-            pizza_class = self._available_pizza_types[pizza_type]()
+            pizza_class = cls._available_pizza_types[pizza_type]()
         return pizza_class
     
     @property
-    def available_pizza_types(self) -> dict: 
-        return self._available_pizza_types
+    def available_pizza_types(cls) -> dict: 
+        return cls._available_pizza_types
