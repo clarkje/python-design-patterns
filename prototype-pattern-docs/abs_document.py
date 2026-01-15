@@ -1,17 +1,18 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 class AbsDocument(ABC): 
 
     def __init__(self): 
         self._title: str = None
         self._content: str = None
-        self._metadata: dict = {}
-        self._sections: list = []
+        self._metadata: dict = None
+        self._sections: list = None
 
-    @staticmethod
+    @abstractmethod
     def clone(self): 
         pass
 
+    @abstractmethod
     def display(self): 
         pass
 
@@ -32,9 +33,17 @@ class AbsDocument(ABC):
         self._content = content
 
     @property
-    def metadata(self) -> str: 
+    def metadata(self) -> dict: 
         return self._metadata
     
     @metadata.setter
     def metadata(self, metadata: dict): 
         self._metadata = metadata
+
+    @property
+    def sections(self) -> list: 
+        return self._sections
+    
+    @sections.setter
+    def sections(self, sections: list) -> None: 
+        self._sections = sections

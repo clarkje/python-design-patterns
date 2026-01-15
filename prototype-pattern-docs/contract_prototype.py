@@ -21,7 +21,11 @@ class Contract(AbsDocument):
         )
 
     def clone(self): 
-        return copy.copy(self)
+        return copy.deepcopy(self)
+    
+    def display(self): 
+        # TODO: Display all contract properties
+        print("Display Contract")
     
     @property
     def party_a(self) -> str: 
