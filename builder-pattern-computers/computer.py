@@ -1,12 +1,13 @@
+from typing import Optional
 from dataclasses import dataclass
 @dataclass(frozen=True, slots=True)
 class Computer(): 
     cpu: str = None
     ram: int = None
     storage: int = None
-    gpu: str = None
-    motherboard: str = None
-    power_supply: int = None
+    gpu: Optional[str] = None
+    motherboard: Optional[str] = None
+    power_supply: Optional[int] = None
     case: str = None
     cooling_system: str = None
     wifi_card: bool = None
