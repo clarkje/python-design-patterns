@@ -13,8 +13,14 @@ class Invoice(AbsDocument):
         return copy.deepcopy(self)
 
     def display(self): 
-        #TODO: Print out all object properties
         print("Displaying Invoice")
+        print(f"  Title: {self.title}")
+        print(f"  Content: {self.content}")
+        print(f"  Metadata: {self.metadata}")
+        print(f"  Sections: {self.sections}")
+        print(f"  Invoice Number: {self.invoice_number}")
+        print(f"  Items: {self.items}")
+        print(f"  Total: {self.total}")
 
     @property
     def invoice_number(self) -> int: 
