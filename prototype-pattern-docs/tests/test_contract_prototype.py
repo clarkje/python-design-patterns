@@ -17,3 +17,17 @@ class TestContract():
         assert clone == basic_contract
         # Verify clone is a different object (not the same instance)
         assert clone is not basic_contract
+    
+    def test_display(self, basic_contract, capsys):
+        basic_contract.display()
+        captured = capsys.readouterr()
+        
+        # Verify all properties are displayed
+        assert "=== Contract ===" in captured.out
+        assert "Title: Test Title" in captured.out
+        assert "Party A: Party A" in captured.out
+        assert "Party B: Party B" in captured.out
+        assert "Terms: Terms" in captured.out
+        assert "Content: Content" in captured.out
+        assert "Metadata: {'data1': 'Test', 'datum2': 'Testing'}" in captured.out
+        assert "Sections: None" in captured.out
