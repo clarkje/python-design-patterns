@@ -1,5 +1,5 @@
 import pytest
-from contract_prototype import Contract 
+from documents import Contract, AbsDocument
 
 @pytest.fixture
 def basic_contract(): 
@@ -11,4 +11,4 @@ def basic_contract():
     contract.metadata = {"data1": "Test", "datum2": "Testing"}
     contract.content = "Content"
     return contract
-
+    

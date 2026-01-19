@@ -1,5 +1,5 @@
 import pytest
-from contract_prototype import Contract
+from documents import Contract
 
 class TestContract(): 
 

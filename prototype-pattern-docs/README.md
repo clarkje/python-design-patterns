@@ -33,9 +33,9 @@ Implement at least three document types:
 
 Create a DocumentRegistry class that:
 
-Stores prototype instances by name
-Provides methods to register and retrieve (clone) prototypes
-Handles both shallow and deep copy scenarios appropriately
+- Stores prototype instances by name
+- Provides methods to register and retrieve (clone) prototypes
+- Handles both shallow and deep copy scenarios appropriately
 
 ### Customization: 
 
