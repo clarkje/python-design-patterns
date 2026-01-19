@@ -7,6 +7,7 @@ class Contract(AbsDocument):
         super().__init__()
         self._party_a = None
         self._party_b = None
+        self._terms = None
 
     def __eq__(self, other):
         if not isinstance(other, Contract):
@@ -24,8 +25,14 @@ class Contract(AbsDocument):
         return copy.deepcopy(self)
     
     def display(self): 
-        # TODO: Display all contract properties
-        print("Display Contract")
+        print("=== Contract ===")
+        print(f"Title: {self._title}")
+        print(f"Party A: {self._party_a}")
+        print(f"Party B: {self._party_b}")
+        print(f"Terms: {self._terms}")
+        print(f"Content: {self._content}")
+        print(f"Metadata: {self._metadata}")
+        print(f"Sections: {self._sections}")
     
     @property
     def party_a(self) -> str: 

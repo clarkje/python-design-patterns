@@ -1,6 +1,5 @@
 import pytest
 from documents import Contract
-
 class TestContract(): 
 
     def test_properties(self, basic_contract: Contract): 

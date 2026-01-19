@@ -1,5 +1,5 @@
 import pytest
-from documents import Contract, AbsDocument
+from documents import Contract
 
 @pytest.fixture
 def basic_contract(): 

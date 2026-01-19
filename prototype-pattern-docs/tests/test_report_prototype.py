@@ -1,7 +1,6 @@
 import pytest
 import datetime
 from documents import Report
-
 class TestReport():
 
     def test_display_all_properties(self, capsys):

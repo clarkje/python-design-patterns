@@ -16,6 +16,8 @@ class DocumentRegistry():
         if isinstance(prototype, AbsDocument): 
             if not key in self._registry:
                 self._registry[key] = prototype
+            else: 
+                raise ValueError(f"Prototype '{key}' already exists in registry")
 
     def get(self, key: str) -> AbsDocument: 
         return self._registry[key].clone()
